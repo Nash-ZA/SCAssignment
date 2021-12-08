@@ -8,7 +8,7 @@ import sys
 
 
 
-s = Service('C:\Drivers\ChromeDriver\chromedriver.exe')
+s = Service(r'C:\Drivers\ChromeDriver\chromedriver.exe')
 img_path = 'C:\\Selenium\\img.jpg'
 options = Options()
 options.add_argument("disable-infobars")
