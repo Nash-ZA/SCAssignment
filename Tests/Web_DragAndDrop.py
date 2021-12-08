@@ -29,7 +29,7 @@ driver.maximize_window()
 time.sleep(1)
 
 # Click on Forms Card
-driver.find_element(By.XPATH, "//*[@class='card-body']//H5[text() = 'Interactions']").click()
+driver.find_element(By.XPATH, "//*[@class='card mt-4 top-card']//H5[text() = 'Interactions']").click()
 print("")
 print("Interactions Display Card Clicked")
 
