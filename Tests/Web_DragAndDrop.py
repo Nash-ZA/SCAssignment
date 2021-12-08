@@ -3,12 +3,18 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 import time
 import sys
 
 s = Service('C:\Drivers\ChromeDriver\chromedriver.exe')
 img_path = 'C:\\Selenium\\img.jpg'
-driver = webdriver.Chrome(service=s)
+options = Options()
+options.add_argument("disable-infobars")
+options.add_argument("--disable-extensions")
+options.add_argument("--headless");
+options.add_argument("window-size=1920,1080");
+driver = webdriver.Chrome(options=options, service=s)
 
 # Open demoga Web Page
 driver.get("https://demoqa.com/")
