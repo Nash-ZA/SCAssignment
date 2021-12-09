@@ -18,6 +18,8 @@ With that said...
 -Ensure that these packages are installed on your project:
 	>Selenium
 	>pytest
+-Place the chromedriver.exe (Found in Tests Folder) in: C:\Drivers\ChromeDriver\chromedriver.exe
+-Place the img.jpg file (Found in Tests Folder) in: C:\Selenium\img.jpg     (Should you not want to use my amazing img file, you can use any other as long as it's in this directory)
 -Execute the script by right clicking in the script window and clicking Run.
 -If you wish to see the gui while executing, remove the "options=options" line when invoking the webdriver.
 
